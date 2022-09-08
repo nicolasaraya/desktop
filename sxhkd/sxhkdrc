@@ -157,3 +157,6 @@ XF86AudioPrev
 
 super + p 
 	xrandr --auto
+
+super + shift + p
+	bash /home/nicolas/.config/screenshot.sh

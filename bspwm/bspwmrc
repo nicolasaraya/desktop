@@ -33,7 +33,7 @@ bspc rule -a Screenkey manage=off
 
 #CUSTOM
 #feh --bg-fill $HOME/Downloads/commission-nate-w-torii-city.jpg &
-feh --bg-fill ./config/wall.jpg &
+feh --bg-fill ./.config/wall.jpg &
 #wal -i $HOME/Downloads/commission-nate-w-torii-city.jpg &
 #wal -i $HOME/Downloads/tiger.jpg &
 . "${HOME}/.cache/wal/colors.sh"
