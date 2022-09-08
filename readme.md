@@ -1,8 +1,8 @@
 #  **Desktop Settings** 
 
 
-![plot2](./screenshots/screenshot1.png "Desktop")
-![plot1](./screenshots/screenshot2.png "Alacritty")
+![plot2](./screenshots/screenshot1.jpg "Desktop")
+![plot1](./screenshots/screenshot2.jpg "Alacritty")
 
 
 ## **Info**
