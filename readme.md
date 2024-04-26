@@ -8,10 +8,12 @@
 ## **Info**
 * OS: Arch Linux
 * WM: Hypr
-* Shell: zsh
-* Terminal: kitty
+* Shell: zsh - fish
+* Terminal: kitty - wezterm - alacritty
 * Editor: subl - code - neovim
 * App Launcher: rofi
 * NavBar: Waybar
+* Browser: brave-browser
+* Theme: Catppuccin Mocha
 
 
