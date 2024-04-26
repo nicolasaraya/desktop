@@ -1,0 +1,84 @@
+{
+    "position": "left", 
+    "height": 0,
+    "modules-center": ["hyprland/workspaces", "network", "pulseaudio", "backlight", "battery", "clock"],
+    // Modules configuration
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"format": "{icon}",
+		"on-click": "activate",
+	 	"persistent-workspaces": {
+	 		"1": [],
+	 		"2": [],
+	 		"3": [],
+	 		"4": [],
+	 		"5": [],
+	 		"6": [],
+	 		"7": [],
+	 		//"8": [],
+	 		//"9": [],
+	 		//"10": []
+	},
+         	"format-icons": {
+             		"1": "",
+             		"2": "󰣇",
+             		"3": "",
+             		"4": "",
+             		"5": "",
+             		"6": "",
+             		"7": "",
+             		"8": "",
+             		"9": "",
+             		"10": ""
+         }
+     },
+
+	"clock": {
+		"format": "󰅐 {:%d/%m %H:%M} ",
+        	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	},
+	"backlight": {
+      "device": "intel_backlight",
+      "format": "{icon} {percent}%",
+      "format-icons": ["", ""],
+      "on-scroll-down": "brightnessctl set 5%+",
+      "on-scroll-up": "value=10000;now=$(brightnessctl get); if [[ $value -ge $now ]]; then brightnessctl set 10000; else brightnessctl set 5%-; fi"
+
+  	},
+	"battery": {
+        	"states": {
+            		"warning": 30,
+            		"critical": 15,
+        	},
+        	"format": "{icon} {capacity}%",
+        	"format-charging": "󰂄 {capacity}%",
+        	"format-plugged": "󰂄{capacity}%",
+        	"format-alt": "{icon} {time}",
+        	"format-full": "󱈑 {capacity}%",
+        	"format-icons": ["󱊡", "󱊢", "󱊣"]
+	},
+	"network": {
+        	"format-wifi": "  {essid}",
+        	"format-ethernet": "󰤮 Disconnected",
+        	"format-linked": "{ifname} (No IP) ",
+        	"format-disconnected": "󰤮 Disconnected",
+		"tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+	},
+	"pulseaudio": {
+		"on-click": "pactl set-sink-port 3 '[Out] Headphones'",
+		"on-scroll-down": "amixer set 'Master' 1%+",
+		"on-scroll-up": "amixer set 'Master' 1%-",
+		"format": "{icon}  {volume}%",
+        	"format-muted": "󰖁 Muted",
+        	"format-icons": {
+            	"headphone": "",
+            	"hands-free": "",
+            	"headset": "",
+            	"phone": "",
+            	"portable": "",
+            	"car": "",
+            	"default": ["", "", ""]
+        },
+    }
+}

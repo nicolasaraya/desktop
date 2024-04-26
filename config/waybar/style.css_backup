@@ -1,0 +1,93 @@
+@import "themes/mocha.css";
+* {
+    border: none;
+    border-radius: 0;
+    font-size: 22px;
+    min-height: 0px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+}
+
+window#waybar {
+    background: transparent;
+    color: white;
+}
+
+tooltip {
+	background: #0f0f0f;
+	border-radius: 15px;
+	border-width: 0px;
+	border-style: solid;
+	border-color: #262626;
+	}
+
+#workspaces button {
+	font-family: "Font Awesome 6 Brands";
+    padding: 10px 15px 10px 15px; 
+    margin: 0px 0px 0px 0px;
+    color: @text;
+}
+
+#workspaces button.active {
+    color: @base;
+    background-color: @mauve;
+    border-radius: 25px;
+    margin: 0px 0px;
+}
+
+#workspaces button.urgent {
+    color: @base;
+    background-color: @red;
+    border-radius: 25px;
+}
+
+#workspaces button:hover {
+	background-color: @yellow;
+	color: @base;
+	border-radius: 25px;
+}
+
+#custom-date, #clock, #battery, #pulseaudio, #network, #workspaces, #backlight {
+	background-color: @crust;
+	padding: 5px 10px;
+	margin: 5px 0px;
+    font-family: SF Pro;
+    font-size: 14px;
+}
+
+#workspaces {
+	background-color: @mantle;
+	border-radius: 15px 0px 0px 15px;
+}
+
+#custom-date {
+	color: @pink;
+}
+
+#clock {
+    color: @pink;
+    border-radius: 0px 0px 15px 15px;
+    margin-right: 10px;
+}
+
+#battery {
+    color: @sky;
+}
+
+#battery.charging {
+    color: @yellow;
+}
+
+#battery.warning:not(.charging) {
+    background-color: @red;
+    color: @base;
+}
+
+#network {
+	color: @blue;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#pulseaudio {
+	color: @rosewater;
+}
