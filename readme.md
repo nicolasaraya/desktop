@@ -1,17 +1,17 @@
 #  **Desktop Settings** 
 
 
-![plot2](./screenshots/screenshot1.jpg "Desktop")
-![plot1](./screenshots/screenshot2.jpg "Alacritty")
+![plot2](./screenshots/screenshot1.png "Desktop")
+![plot1](./screenshots/screenshot2.png "Alacritty")
 
 
 ## **Info**
-* OS: Pop OS
-* WM: Bspwm
+* OS: Arch Linux
+* WM: Hypr
 * Shell: zsh
-* Terminal: Alacritty
-* Compositor: picom
+* Terminal: kitty
+* Editor: subl - code - neovim
 * App Launcher: rofi
-* NavBar: Polybar
+* NavBar: Waybar
 
 
